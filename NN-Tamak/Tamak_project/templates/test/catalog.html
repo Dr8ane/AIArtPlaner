@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body, html{
+    overflow-x: hidden;
+    background: #d4bd9b;
+}
+nav{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+#checkbox-menu,
+.toggle{
+    display: none;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.menu li a{
+    color: #000;
+    text-decoration: none;
+    align-self: center;
+    font-size: 13px;
+    padding: 10px 15px;
+    transition: background .2s linear;
+}
+.menu li a:hover{
+    background: #4c3446;
+    border-radius: 3px;
+    color: #fff;
+}
+.menu li a.logo{
+    font-size: 25px;
+    margin-right: 240px;
+}
+.card{
+	max-width: 300px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card-container{
+	padding: 25px;
+}
+.card-info{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+.card-info.money{
+	font-size: 18px;
+	color: #FCEF7D;
+}
+.cards{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 30px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li><a class="logo" href="#">Luxestate</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">SmartHomeBlueprints</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Вход</a></li>
+                </ul>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="intro wrapper">
+            <div class="cards">
+                {% for item in data %}
+                <div class="card">
+                    <img src={{ item['image'] }}  width="300" height="200" alt="">
+                    <div class="card-container">
+                        <p>{{ item['name'] }}</p>
+                        <div class="card-info">
+                            <div class="money">{{ item['class'] }}</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+</body>
+</html>

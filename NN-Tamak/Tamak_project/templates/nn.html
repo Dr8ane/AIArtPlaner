@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="templates/stylenn.css">
+</head>
+<body>
+    <header>
+		<nav>
+			<ul class="menu">
+                <li><img class="logo" src="templates/method-draw-image.svg" alt="" width="50" height="50"></li>
+                <li><a class="logo-name" href="home">AIArtPlaner</a></li>
+				<li><a href="catalog">Каталог</a></li>
+				<li><a href="project">Мои проекты</a></li>
+                <li><a href="support">Поддержка</a></li>
+				<li><a href="team">О нас</a></li>
+                <li><a href="home#price">Тарифы</a></li>
+                <li><a href="home#news">Новости</a></li>
+                <li><a class="login" href="login">Login</a></li>
+			</ul>
+		    
+		</nav>
+	</header>
+    <main>
+        <section>
+            <div class="text">
+                <h1>Загрузка эскиза</h1>
+            </div>
+            <div class="block-images">
+                <div class="block">
+                    <div id="file-dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="uploaded-image" src="" alt="Перетащите файлы сюда" width="500" height="614">
+                    </div>
+                    <button class="connect" type="submit" onclick="loadImage()">Загрузить</button>
+                </div>
+
+                <div class="block">
+                    <div id="zone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img id="image" src="" alt="" width="500" height="614">
+                    </div>
+                    <button class="connect" type="submit">Сохранить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-about">
+            <div class="footer-block">
+                <h1>AIArtPlaner</h1>
+                <h2>Присоединяйтесь к нам и откройте для себя мир безграничных возможностей в области проектирования и строительства!</h2>
+                <p>2023</p>
+            </div>
+            <div class="footer-supports">
+                <p>Поддержка</p>
+                <p>О нас</p>
+                <p>Контакты</p>
+            </div>
+        </div>
+    </footer>
+    <script src="templates/script.js"></script>
+</body>
+</html>

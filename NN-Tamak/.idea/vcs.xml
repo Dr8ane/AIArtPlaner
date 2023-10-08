@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/Tamak_project/NN/TFODCourse" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tamak_project/NN/TFODCourse/Tensorflow/labelimg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tamak_project/NN/TFODCourse/Tensorflow/models" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Tamak_project/NN/TFODCourse/Tensorflow/scripts" vcs="Git" />
+  </component>
+</project>

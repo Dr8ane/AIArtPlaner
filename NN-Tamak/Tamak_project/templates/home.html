@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="templates/stylemain.css">
+</head>
+<body>
+    <header>
+		<nav>
+			<ul class="menu">
+                <li><img class="logo" src="templates/method-draw-image.svg" alt="" width="50" height="50"></li>
+                <li><a class="logo-name" href="home">AIArtPlaner</a></li>
+				<li><a href="catalog">Каталог</a></li>
+				<li><a href="project">Мои проекты</a></li>
+                <li><a href="support">Поддержка</a></li>
+				<li><a href="team">О нас</a></li>
+                <li><a href="home#price">Тарифы</a></li>
+                <li><a href="home#news">Новости</a></li>
+                <li><a class="login" href="login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+        <section class="wrapper">
+			<div class="intro-img">
+                <img src="templates/method-draw-image.svg" alt="" width="150" height="150">
+			</div>
+			<div class="intro-text">
+                <h3>Добро пожаловать на наш сайт! Мы предлагаем Вам уникальную возможность создавать свои собственные проекты-чертежи с помощью нашей передовой нейросети. Выберите свой проект из нашего обширного каталога или загрузите собственный чертеж для его последующей обработки нашей нейросетью. </h3>
+			</div>
+            <div class="intro-search">
+                <form action="/search" method="get">
+                    <input class="search" type="text" name="query" placeholder="Поиск">
+                    <button class="find" type="submit">Найти</button>
+                    <button class="upload" type="submit"><a href="nn">Загрузить эскиз</a></button>
+                </form>
+            </div>
+		</section>
+        <section class="info">
+            <div class="dlabel">
+                <h1>Как это работает?</h1>
+                <p>Чтобы распознать ваш чертеж, наша нейросеть проходит пять этапов:</p>
+            </div>
+            <div class="agent-cards">
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>1</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Подготовка данных: сбор изображений с объектами на чертежах и их маркировка; разделение данных на обучающую, тестовую и валидационную выборки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>2</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Выбор архитектуры нейросети: определение типа нейросети (сверточная, рекуррентная и т. д.), количества слоев, нейронов и других параметров, исходя из специфики задачи.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>3</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Обучение нейросети: подача обучающих данных на вход нейросети и настройка ее весов таким образом, чтобы минимизировать ошибку на выходе.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>4</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Оценка качества обучения: тестирование нейросети на тестовой выборке и определение точности распознавания объектов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>5</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Применение нейросети: использование обученной нейросети для определения объектов на новых изображениях чертежей.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="circle">
+                        <h5>6</h5>
+                    </div>
+                    <div class="agent-info">
+                        <div class="agent-block">
+                            <p class="agent-name">Постоянное обновление данных: добавление новых объектов и их изображений в обучающую выборку для улучшения точности распознавания.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p>Мы гарантируем высокое качество и точность результатов, обеспечивая Вам комфортное и эффективное проектирование. Присоединяйтесь к нам и откройте для себя мир безграничных возможностей в области проектирования и строительства!</p>
+            </div>
+            <button class="connect" type="submit">Присоединиться </button>
+        </section>
+        <section class="about">
+            <img class="engine" src="templates/548-5482067_employee-engagement-human-resource-management-organization-human-resource 2.svg" alt="" width="650" height="540">
+            <div class="history">
+                <h1>Наша история</h1>
+                <p>Наша компания была основана в 2022 году с целью помочь людям в подборе идеальных планов домов, соответствующих их потребностям и бюджету. Основатели компании были вдохновлены идеей создания удобного и эффективного инструмента для подбора планов домов. Одним из ключевых аспектов работы компании является разработка нейросети, которая позволяет быстро и точно распознавать планы домов, представленные пользователями.Нейросеть обучается на большом количестве разнообразных планов домов, что позволяет ей стать более точной и эффективной в своей работе.</p>
+                <button class="more" type="submit">Подробнее</button>
+            </div>
+        </section>
+        <section class="prices" id="price">
+            <div class="rate">
+                <h1>Тарифы</h1>
+            </div>
+            <div class="dlabel1">
+                <h1>Цены и тарифы</h1>
+                <p>Здесь Вы можете подобрать интересующий Вас тариф и</p>
+                <p>расширить свои возможности</p>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="name">
+                        <h5>Starter</h5>
+                    </div>
+                    <div class="price-block">
+                        <p class="price-name">Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                        <p class="price">0$/mo</p>
+                    </div>
+                    <button class="test" type="submit">Попробовать бесплатно</button>
+                    <ul>
+                        <li>Cras justo odio.</li>
+                        <li>Dapibus ac facilisis in.</li>
+                        <li>Morbi leo risus.</li>
+                        <li>Excepteur sint occaecat velit.</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <div class="name">
+                        <h5>Exclusive</h5>
+                    </div>
+                    <div class="price-block">
+                        <p class="price-name">Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                        <p class="price">99$/mo</p>
+                    </div>
+                    <button class="test" type="submit">Попробовать бесплатно</button>
+                    <ul>
+                        <li>Cras justo odio.</li>
+                        <li>Dapibus ac facilisis in.</li>
+                        <li>Morbi leo risus.</li>
+                        <li>Excepteur sint occaecat velit.</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <div class="name">
+                        <h5>Premium</h5>
+                    </div>
+                    <div class="price-block">
+                        <p class="price-name">Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                        <p class="price">150$/mo</p>
+                    </div>
+                    <button class="test" type="submit">Попробовать бесплатно</button>
+                    <ul>
+                        <li>Cras justo odio.</li>
+                        <li>Dapibus ac facilisis in.</li>
+                        <li>Morbi leo risus.</li>
+                        <li>Excepteur sint occaecat velit.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="news">
+            <div class="heading">
+                <h1>Новости</h1>
+            </div>
+            <div class="text">
+                <h1>Последние новости</h1>
+                <p>Как создать идеальный план дома: интересные статьи от наших источников</p>
+            </div>
+            <div class="news-cards">
+                <div class="news-card">
+                    <img class="image" src="templates/image 8.svg" alt="" width="360" height="270">
+                    <div class="news-block">
+                        <h1>Новый стиль</h1>
+                        <p>Новые тенденции в дизайне планов домов: обзор актуальных стилей и планировок.</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img class="image" src="templates/image 9.svg" alt="" width="360" height="268">
+                    <div class="news-block">
+                        <h1>Выбор размера</h1>
+                        <p>Рекомендации по выбору оптимального размера дома в зависимости от бюджета и потребностей семьи.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="image" src="templates/image 10.svg" alt="" width="360" height="268">
+                    <div class="news-block">
+                        <h1>План участка</h1>
+                        <p>Советы по планированию участка вокруг дома: расположение дополнительных построек и зон отдыха.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="info-team">
+                <h1>Наша команда</h1>
+                <p>There are many variations of passages of Lorem Ipsum available,</p>
+                <p>but the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img class="image" src="" alt="" width="360" height="300">
+                    <div class="team-block">
+                        <h1>Первый</h1>
+                        <p>Первый первый</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img class="image" src="" alt="" width="360" height="300">
+                    <div class="team-block">
+                        <h1>Первый</h1>
+                        <p>Первый первый</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img class="image" src="" alt="" width="360" height="300">
+                    <div class="team-block">
+                        <h1>Первый</h1>
+                        <p>Первый первый</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-about">
+            <div class="footer-block">
+                <h1>AIArtPlaner</h1>
+                <h2>Присоединяйтесь к нам и откройте для себя мир безграничных возможностей в области проектирования и строительства!</h2>
+                <p>2023</p>
+            </div>
+            <div class="footer-supports">
+                <p>Поддержка</p>
+                <p>О нас</p>
+                <p>Контакты</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
